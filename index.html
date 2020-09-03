@@ -18,7 +18,6 @@
 			width: 100%;
 		}
 		body {
-			font-size: 0.7em;
 			font-family: 'Open Sans', sans-serif;
 			background-image: url(banner_empty.png);
 			background-image: linear-gradient(black 0, #38385654 0),url(banner_empty.png);
@@ -28,11 +27,11 @@
 			background-position: center;
 			align-items: center;
 			color: #2d2d2d;
+			font-size: 1.5rem;
 		}
 		div {
 			width: 100%;
 			text-align: center;
-			font-size: 1.5em;
 		}
 		img {
 			image-rendering: pixelated;
@@ -41,6 +40,10 @@
 		iframe {
 			max-width: 100%;
 			margin: auto;
+			margin-top: 0;
+		}
+		.logos {
+			font-size: 2rem;
 		}
 		.brand-logo {
 			color: white;
@@ -53,21 +56,23 @@
 <body>
 	<div class="d-flex align-items-center">
 		<div class="container mt-4">
-			<img src="inline_org_outline.png" alt="RedCraft.org Logo">
-			<p>
-				<img src="https://www.countryflags.io/gb/flat/24.png">
-				A brand new multi-language Minecraft experience with an open sourced infrastructure of carefully crafted Creative and Survival servers. Coming in 2020.
-			</p>
-			<p>
-				<img src="https://www.countryflags.io/fr/flat/24.png">
-				RedCraft.org - Une toute nouvelle expérience Minecraft multi-langue avec une infrastructure open source de serveurs créatif et survie soigneusement conçus. Sortie en 2020.
-			</p>
-			<div class="d-flex justify-content-between flex-wrap">
+			<div class="mb-4">
+				<img src="inline_org_outline.png" alt="RedCraft.org Logo">
+				<p>
+					<img src="https://www.countryflags.io/gb/flat/24.png">
+					A brand new multi-language Minecraft experience with an open sourced infrastructure of carefully crafted Creative and Survival servers. Coming in 2020.
+				</p>
+				<p>
+					<img src="https://www.countryflags.io/fr/flat/24.png">
+					Une toute nouvelle expérience Minecraft multilingue avec une infrastructure open source de serveurs créatif et survie soigneusement conçus. Sortie en 2020.
+				</p>
+			</div>
+			<div class="d-flex justify-content-between flex-wrap mb-4">
 				<iframe id="iframe-youtube" class="mb-4" width="560" height="315" src="https://www.youtube.com/embed/ro7DkxHw0Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<iframe id="iframe-discord" class="mb-4" src="https://discordapp.com/widget?id=609755577878577153&theme=dark" width="300" height="350" allowtransparency="true" frameborder="0"></iframe>
 			</div>
 			<div>
-                <div class="mb-3 d-flex flex-wrap justify-content-center">
+                <div class="mb-3 d-flex flex-wrap justify-content-center logos">
                     <a target="_blank" href="https://twitter.com/RedCraftorg" class="brand-logo mr-4"><i class="fab fa-twitter"></i></a>
                     <a target="_blank" href="https://fb.me/RedCraftorg" class="brand-logo mr-4"><i class="fab fa-facebook"></i></a>
                     <a target="_blank" href="https://github.com/redcraft-org" class="brand-logo mr-4"><i class="fab fa-github"></i></a>
